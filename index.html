@@ -26,22 +26,22 @@
                     // global variables (widget, UWA, document)
 
                     // Function to call when widget is loaded
-                    widget.addEvent("onLoad", Main.onLoad);
+                    widget.addEvent("onLoad", script.onLoad);
 
                     // Function to call when widget is being resized
-                    widget.addEvent("onResize", Main.onResize);
+                    widget.addEvent("onResize", script.onResize);
 
                     // Function to call when widget view changed
-                    widget.addEvent("onViewChange", Main.onViewChange);
+                    widget.addEvent("onViewChange", script.onViewChange);
 
                     // Function to call when a preference item is changed
-                    widget.addEvent("onEdit", Main.onEdit);
+                    widget.addEvent("onEdit", script.onEdit);
 
                     // Function to call when refresh button is clicked
-                    widget.addEvent("onRefresh", Main.onRefresh);
+                    widget.addEvent("onRefresh", script.onRefresh);
 
                     // Function to call when prefence edit is finalized
-                    widget.addEvent("endEdit", Main.endEdit);
+                    widget.addEvent("endEdit", script.endEdit);
                 }
             );
         </script>
