@@ -17,31 +17,31 @@
 
             require(
                 [
-                    "Widget/scripts/script"
+                    "Widget/Main"
                 ],
                 function(
-                    script
+                    Main
                 ) 
                 {
                     // global variables (widget, UWA, document)
 
                     // Function to call when widget is loaded
-                    widget.addEvent("onLoad", script.onLoad);
+                    widget.addEvent("onLoad", Main.onLoad);
 
                     // Function to call when widget is being resized
-                    widget.addEvent("onResize", script.onResize);
+                    widget.addEvent("onResize", Main.onResize);
 
                     // Function to call when widget view changed
-                    widget.addEvent("onViewChange", script.onViewChange);
+                    widget.addEvent("onViewChange", Main.onViewChange);
 
                     // Function to call when a preference item is changed
-                    widget.addEvent("onEdit", script.onEdit);
+                    widget.addEvent("onEdit", Main.onEdit);
 
                     // Function to call when refresh button is clicked
-                    widget.addEvent("onRefresh", script.onRefresh);
+                    widget.addEvent("onRefresh", Main.onRefresh);
 
                     // Function to call when prefence edit is finalized
-                    widget.addEvent("endEdit", script.endEdit);
+                    widget.addEvent("endEdit", Main.endEdit);
                 }
             );
         </script>
