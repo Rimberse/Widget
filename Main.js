@@ -19,8 +19,10 @@ define
                 console.log("Widget is running!");
                 let count = 0;
                 const container = document.createElement('div');
-                const button = document.createElement('div');
+                const button = document.createElement('button');
+                button.innerText = 'click me';
                 const text = document.createElement('div');
+                text.innerHTML = "The button has been clicked 0 times";
 
                 button.addEventListener('click', () => {
                     count++;
@@ -29,7 +31,7 @@ define
 
                 container.appendChild(button);
                 container.appendChild(text);
-                widget.body.innerHTML = container;
+                widget.body.appendChild(container);
             },
 
             onResize: function() {
