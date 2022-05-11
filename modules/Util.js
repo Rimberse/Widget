@@ -9,12 +9,11 @@ define
         
     )
     {
-        console.info('Custom loaded');
+        console.info('Util loaded');
 
         // global variables (widget, UWA, document)
 
         // Private functions. Not accessible by other modules. Accesible within this module only
-        var get = 'Get';
 
         function getRandomNumber(upperLimit) {
             return Math.round(Math.random() * upperLimit);
