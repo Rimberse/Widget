@@ -1,6 +1,6 @@
 define
 (
-    'Widget/Helper',
+    'Widget/Util',
     [
     ],
     function
