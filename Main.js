@@ -16,8 +16,20 @@ define
             onLoad: function() {
                 console.info("Global var widget", widget);
 
-                console.log("Hello World!");
-                widget.body.innerHTML = "Redacted!";
+                console.log("Widget is running!");
+                let count = 0;
+                const container = document.createElement('div');
+                const button = document.createElement('div');
+                const text = document.createElement('div');
+
+                button.addEventListener('click', () => {
+                    count++;
+                    text.innerHTML = `The button has been clicked ${count} times`;
+                })
+
+                container.appendChild(button);
+                container.appendChild(text);
+                widget.body.innerHTML = container;
             },
 
             onResize: function() {
