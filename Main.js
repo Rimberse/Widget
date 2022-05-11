@@ -33,7 +33,7 @@ define
                     text.innerHTML = `The button has been clicked ${count} times`;
                 })
 
-                Util.myFunction(10);
+                console.info("Random number: " + Util.myFunction(10));
 
                 container.appendChild(button);
                 container.appendChild(text);
