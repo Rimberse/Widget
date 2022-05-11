@@ -6,12 +6,12 @@ define
         'DS/PlatformAPI/PlatformAPI',
 
         // Custom modules
-        'Modules/Custom'
+        'Modules/Util'
     ],
     function
     (
         PlatformAPI,
-        Custom
+        Util
     )
     {
 
@@ -33,7 +33,7 @@ define
                     text.innerHTML = `The button has been clicked ${count} times`;
                 })
 
-                Custom.myFunction(10);
+                Util.myFunction(10);
 
                 container.appendChild(button);
                 container.appendChild(text);
