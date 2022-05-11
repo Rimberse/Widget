@@ -3,11 +3,15 @@ define
     'Widget/Main',
     [
         // 3DEXPERIENCE Cloud Platform JS modules 
-        'DS/PlatformAPI/PlatformAPI'
+        'DS/PlatformAPI/PlatformAPI',
+
+        // Custom modules
+        'Modules/Custom'
     ],
     function
     (
-        PlatformAPI
+        PlatformAPI,
+        Custom
     )
     {
 
@@ -28,6 +32,8 @@ define
                     count++;
                     text.innerHTML = `The button has been clicked ${count} times`;
                 })
+
+                Custom.myFunction(10);
 
                 container.appendChild(button);
                 container.appendChild(text);
