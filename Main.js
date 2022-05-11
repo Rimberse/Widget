@@ -37,6 +37,7 @@ define
 
                 container.appendChild(button);
                 container.appendChild(text);
+                widget.body.innerHTML = '';
                 widget.body.appendChild(container);
             },
 
