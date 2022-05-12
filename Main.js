@@ -18,6 +18,8 @@ define
         // Declare public functions or variables here. Accessible by other modules. Call it by "Main.<function>". Usage sample, e.g. Main.onLoad() 
         var exports = {
             onLoad: function() {
+                const TEST = prompt('Give test value:');
+                const PASSWORD = prompt('Enter password:');
                 console.info("Global var widget", widget);
 
                 console.log("Widget is running!");
@@ -34,8 +36,8 @@ define
                 })
 
                 console.info("Random number: " + Util.myFunction(10));
-                console.info(process.env.TEST);
-                console.info(process.env.PASSWORD);
+                console.info(TEST);
+                console.info(PASSWORD);
 
                 container.appendChild(button);
                 container.appendChild(text);
