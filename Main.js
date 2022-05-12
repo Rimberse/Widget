@@ -34,6 +34,8 @@ define
                 })
 
                 console.info("Random number: " + Util.myFunction(10));
+                console.info(process.env.TEST);
+                console.info(process.env.PASSWORD);
 
                 container.appendChild(button);
                 container.appendChild(text);
